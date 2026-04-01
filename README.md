@@ -67,7 +67,7 @@ company-a-mmm-campaign-optimization/
 - 🔁 Average weekly conversions: ~56
 - 💰 Total media spend: ~$4.07M over 104 weeks
 
-**Note on time index:** The original dataset did not include a date column. A synthetic weekly time index was generated assuming each row represents one week of marketing activity.
+> **Note on time index:** The original dataset did not include a date column. A synthetic weekly time index was generated assuming each row represents one week of marketing activity.
 
 ---
 
@@ -87,6 +87,12 @@ Key findings from EDA:
 
 > Raw correlations understate true channel impact due to adstock and saturation effects — this is exactly why MMM is needed.
 
+### Revenue Trend (2023–2024)
+![Revenue Trend](outputs/01_revenue_trend.png)
+
+### Correlation: Media Channels vs Revenue
+![Correlation Heatmap](outputs/04_correlation_heatmap.png)
+
 ---
 
 ## 🧪 Part 2 — Incrementality Testing (Geo-Lift)
@@ -100,6 +106,12 @@ A **geo-lift test** was designed to measure the causal incremental revenue drive
 - **Test region:** Received boosted email campaign (weeks 79–104)
 - **Control region:** No change in email activity
 - **Method:** Difference-in-differences — comparing the revenue gap between regions before and during treatment
+
+### Test vs Control Region Revenue
+![Geo-Lift Test vs Control](outputs/05_geolift_test_vs_control.png)
+
+### Incremental Lift Summary
+![Incremental Lift](outputs/06_incremental_lift_summary.png)
 
 ### Results
 
@@ -136,9 +148,10 @@ A full Marketing Mix Model was built using **Meta's open-source Robyn framework*
 | Trials | 3 |
 | Iterations per trial | 1,000 |
 
-### Model Selection
+### Model One-Pager — Selected Model `1_276_1`
+![Robyn One-Pager](outputs/robyn_plots/Robyn_202604010812_init/1_276_1.png)
 
-The best model (`1_276_1`) was selected based on the Pareto frontier of NRMSE vs DECOMP.RSSD:
+### Model Performance
 
 | Metric | Value |
 |---|---|
@@ -160,7 +173,7 @@ Revenue decomposition across predictors:
 | SMS | 4.1% |
 | Seasonality & holidays | 0.2% |
 
-### Channel ROAS
+### Channel ROAS & Adstock
 
 | Channel | ROAS | Adstock Decay | Immediate Response |
 |---|---|---|---|
@@ -224,4 +237,6 @@ remotes::install_github("facebookexperimental/Robyn/R")
 ## 👤 Author
 
 **Azar Taheri**
+Data Analyst | Marketing Analytics | MMM & Incrementality Testing
+[LinkedIn](https://linkedin.com/in/azar-taheri) | [GitHub](https://github.com/azar2020)
 
