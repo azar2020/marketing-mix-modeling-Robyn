@@ -88,10 +88,12 @@ Key findings from EDA:
 > Raw correlations understate true channel impact due to adstock and saturation effects — this is exactly why MMM is needed.
 
 ### Revenue Trend (2023–2024)
-![Revenue Trend](outputs/01_revenue_trend.png)
+<img width="1354" height="555" alt="image" src="https://github.com/user-attachments/assets/c0299914-c9e1-46ca-ab84-57c7a179cbe3" />
+
 
 ### Correlation: Media Channels vs Revenue
-![Correlation Heatmap](outputs/04_correlation_heatmap.png)
+<img width="715" height="617" alt="image" src="https://github.com/user-attachments/assets/dfa349db-4627-460d-be28-1b83fabdf426" />
+
 
 ---
 
@@ -108,10 +110,11 @@ A **geo-lift test** was designed to measure the causal incremental revenue drive
 - **Method:** Difference-in-differences — comparing the revenue gap between regions before and during treatment
 
 ### Test vs Control Region Revenue
-![Geo-Lift Test vs Control](outputs/05_geolift_test_vs_control.png)
+<img width="1352" height="544" alt="image" src="https://github.com/user-attachments/assets/8b166b64-066d-491a-8aaa-f2a122cb6d5d" />
+
 
 ### Incremental Lift Summary
-![Incremental Lift](outputs/06_incremental_lift_summary.png)
+<img width="823" height="613" alt="image" src="https://github.com/user-attachments/assets/92e010f6-6c3a-4f13-94b9-1fc1b7cee8cc" />
 
 ### Results
 
@@ -149,7 +152,8 @@ A full Marketing Mix Model was built using **Meta's open-source Robyn framework*
 | Iterations per trial | 1,000 |
 
 ### Model One-Pager — Selected Model `1_276_1`
-![Robyn One-Pager](outputs/robyn_plots/Robyn_202604010812_init/1_276_1.png)
+<img width="531" height="625" alt="image" src="https://github.com/user-attachments/assets/55bb8d50-8bd1-4b38-b3d6-217932967599" />
+
 
 ### Model Performance
 
