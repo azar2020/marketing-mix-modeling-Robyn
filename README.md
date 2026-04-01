@@ -224,5 +224,4 @@ remotes::install_github("facebookexperimental/Robyn/R")
 ## 👤 Author
 
 **Azar Taheri**
-Data Analyst | Marketing Analytics | MMM & Incrementality Testing
-[LinkedIn](https://linkedin.com/in/azar-taheri) | [GitHub](https://github.com/azar2020)
+
