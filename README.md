@@ -78,7 +78,7 @@ company-a-mmm-campaign-optimization/
 Key findings from EDA:
 
 - **Seasonal patterns** are clearly visible — revenue peaks in Q4 each year, consistent with publishing industry dynamics
-- **Paid Search has the highest weekly spend** (~$15K/week), followed by Social Media (~$12K/week)
+- **Paid Search has the highest weekly spend**  (~$15K/week), followed by Social Media (~$12K/week)
 - **Correlation with revenue:**
   - Search: 0.47 — moderate positive relationship
   - Social: 0.23 — weak positive relationship
